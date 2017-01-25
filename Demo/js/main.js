@@ -32,7 +32,7 @@ var initialScene = new ScrollMagic.Scene({
     offset: 1,
 })
 .on("leave", function () {
-    $("#preloader-day").css("background-image","url(../css/images/day-theatre.svg)");
+    $("#preloader-day").css("background-image","url(images/day-theatre.svg)");
     $(".loading-bg").css("background-color","#ebe2d0");
     $("nav ul a").css("color","#795548");
 
@@ -47,7 +47,7 @@ var sceneLoading = new ScrollMagic.Scene({
 .on("enter", function () {
 		// trigger animation by changing inline style.
 		//preloaderDay.style.backgroundImage = "/css/images/preloader-night.svg";
-	$("#preloader-day").css("background-image","url(../css/images/night-theatre.svg)");
+	$("#preloader-day").css("background-image","url(images/night-theatre.svg)");
     $(".loading-bg").css({"background-color":"#535352","transition":"all 2s ease-in-out"});
     $("nav ul a").css("color","#BDBDBD");
 
@@ -109,6 +109,9 @@ var sceneComingsoon = new ScrollMagic.Scene({
     $("#sceneComingsoon").css("transition","all 1s east-in-out")
     $(".poster-effect").css({"border":"10px solid #FFC107","transition":"all 1s ease-in-out"})
     $("body").css({"background-image":"white","transition":"all 1s ease-in-out"})
+    $("#awning").css({"display:block"},{"transition:all 1s ease-in-out"})
+    $("#awning-2").css({"display:block"},{"transition:all 1s ease-in-out"})
+
 
 .on("leave",function(){
     $("body").css({"background-color":"#FFECB3","transition":"all 1s ease-in-out"})

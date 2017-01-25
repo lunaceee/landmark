@@ -3,7 +3,7 @@ body {
 }
 
 #preloader-day {
-  background-image: url("css/images/day-theatre.svg");
+  background-image: url("../css/images/day-theatre.svg");
   background-repeat: no-repeat;
   transition: background-image 1s;
   background-position: center;
@@ -79,6 +79,7 @@ h2 {
 
 #awning {
   height: 30px;
+  display: none;
 }
 
 #awning-2 {
@@ -88,6 +89,11 @@ h2 {
   border-right: 50px solid transparent;
   margin-top: -1.4em;
   margin-bottom: -10em;
+  display: none;
+}
+
+#coming-soon-carousel {
+  margin-top: -28em !important;
 }
 
 /* steps causes the animation to chunk into 12 equal pieces */
